@@ -161,7 +161,7 @@ let country_list = {
 };
 
 // api key from exhange rate api
-let apiKey = " 69c719b655c76ce330283207";
+let apiKey = "{your_api_key}";
 
 const dropList = document.querySelectorAll("form select");
 const fromCurrency = document.querySelector(".from select");
@@ -211,7 +211,7 @@ const getExchangeRate = () => {
 
     exchangeRateText.innerText = "Pricekajte...";
 
-    let url = `https://v6.exchangerate-api.com/v6/69c719b655c76ce330283207/latest/USD`;
+    let url = `https://v6.exchangerate-api.com/v6/{your_api_key}/latest/USD`;
     fetch(url)
         .then((response) => response.json())
         .then((result) => {
